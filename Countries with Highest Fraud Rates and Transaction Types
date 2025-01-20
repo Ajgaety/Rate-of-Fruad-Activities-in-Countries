@@ -1,0 +1,7 @@
+plt.figure(figsize=(13,5)) 
+sns.countplot(x="Location", hue="TransactionType", data=df[df['IsFraud']==1], palette=["#ff7fee", "#E44AD"])
+plt.title('Countries with Highest Fraud Rates and Transaction Types')
+plt.xlabel('Location')
+plt.ylabel("Count")
+plt.legend(title="Transaction Type") 
+plt.show()
