@@ -1,0 +1,6 @@
+plt.figure(figsize=(8,5)) 
+sns.histplot(df[df['IsFraud']==1]["Amount"], kde=True, color="#FF9800") 
+plt.title('Distribution of Transaction Amounts for Fraudulent Transactions')
+plt.xlabel("Transaction Amount")
+plt.ylabel('Frequency') 
+plt.show()
